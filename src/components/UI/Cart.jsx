@@ -1,5 +1,6 @@
 import styles from "./Cart.module.css";
 import ImageButton from "./ImageButton";
+import { baseUrl } from "../../App";
 
 function Cart({ product, setProduct }) {
   return (
