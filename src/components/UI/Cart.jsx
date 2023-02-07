@@ -22,7 +22,7 @@ function Cart({ product, setProduct }) {
                 </p>
               </div>
               <ImageButton
-                src={"src\\assets\\images\\icon-delete.svg"}
+                src={`${baseUrl}/icon-delete.svg`}
                 onClick={() => setProduct(null)}
               />
             </div>
