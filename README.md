@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/dogankocadayilar/ecommerce-product-page)
-- Live Site URL: [Add live site URL here](https://dogankocadayilar.github.io/ecommerce-product-page/)
+- Solution URL: [solution URL](https://github.com/dogankocadayilar/ecommerce-product-page)
+- Live Site URL: [live site URL](https://dogankocadayilar.github.io/ecommerce-product-page/)
 
 ### Built with
 
