@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.75rem;
+  background-color: var(--Orange);
+  color: white;
+  padding: 0.1em 0.5em;
+  border-radius: 15px;
+  transform: translate(50%, -50%);
+}

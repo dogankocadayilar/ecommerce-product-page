@@ -1,0 +1,84 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.button > i {
+  font-size: 1rem;
+}
+
+.button:hover > i {
+  color: var(--Orange);
+}
+
+.button:first-of-type {
+  left: 15px;
+}
+
+.button:last-of-type {
+  right: 15px;
+}
+
+.carousel > img {
+  object-fit: cover;
+  width: 100%;
+  height: 45vh;
+}
+
+.thumbnail_container {
+  display: none;
+
+  width: 100%;
+}
+
+.thumbnail_image {
+  object-fit: contain;
+  width: 90px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.thumbnail_image.selected {
+  opacity: 0.5;
+  border: 2px solid var(--Orange);
+}
+
+.thumbnail_image:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 800px) {
+  .button {
+    display: none;
+  }
+
+  .thumbnail_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .carousel {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .carousel > img {
+    height: 48vh;
+    border-radius: 15px;
+  }
+}
