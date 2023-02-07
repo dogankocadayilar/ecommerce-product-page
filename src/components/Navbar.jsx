@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { baseUrl } from "../App";
 import styles from "./Navbar.module.css";
 import Cart from "./UI/Cart";
 import ImageButton from "./UI/ImageButton";
@@ -27,12 +28,12 @@ function Navbar({ product, setProduct }) {
         <div className={styles.wrapper}>
           <div className={styles.side}>
             <ImageButton
-              src={"src\\assets\\images\\icon-menu.svg"}
+              src={`${baseUrl}/icon-menu.svg`}
               alt={"Menu"}
               onClick={() => setIsMenuOpen(true)}
             />
             <img
-              src="src\assets\images\logo.svg"
+              src={`${baseUrl}/logo.svg`}
               alt="Logo"
               className={styles.logo}
             />
@@ -46,13 +47,13 @@ function Navbar({ product, setProduct }) {
           </div>
           <div className={styles.side}>
             <ImageButton
-              src={"src\\assets\\images\\icon-cart.svg"}
+              src={`${baseUrl}/icon-cart.svg`}
               alt={"Cart"}
               onClick={() => setIsCartOpen((prevState) => !prevState)}
               numberOfProduct={product?.number_of_product || 0}
             />
             <img
-              src="src\assets\images\image-avatar.png"
+              src={`${baseUrl}/image-avatar.png`}
               alt="Profile Picture"
               className={styles.profileImage}
             />

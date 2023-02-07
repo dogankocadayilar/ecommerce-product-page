@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { baseUrl } from "../App";
 import styles from "./ProductCarousel.module.css";
 
 const images = [1, 2, 3, 4];
@@ -25,7 +26,7 @@ function ImageCarousel() {
         <i className="fa-solid fa-angle-left"></i>
       </button>
       <img
-        src={`src\\assets\\images\\image-product-${images[index]}.jpg`}
+        src={`${baseUrl}/image-product-${images[index]}.jpg`}
         alt="Product Image"
       />
       <button className={styles.button} onClick={() => handleClick(1)}>
@@ -36,7 +37,7 @@ function ImageCarousel() {
           return (
             <img
               key={image}
-              src={`src\\assets\\images\\image-product-${image}-thumbnail.jpg`}
+              src={`${baseUrl}/image-product-${image}-thumbnail.jpg`}
               alt="Sneaker Picture"
               className={`${styles.thumbnail_image} ${
                 index == image - 1 ? styles.selected : ""
