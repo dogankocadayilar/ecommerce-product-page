@@ -10,7 +10,7 @@ function Cart({ product, setProduct }) {
           <>
             <div className={styles.info_container}>
               <img
-                src="src\assets\images\image-product-1-thumbnail.jpg"
+                src={`${baseUrl}/image-product-1-thumbnail.jpg`}
                 alt="Picture"
                 className={styles.cart_image}
               />
